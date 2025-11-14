@@ -821,6 +821,12 @@ type LsServer struct {
 	VmediaPolicyName               string   `xml:"vmediaPolicyName,attr,omitempty"`
 }
 
+// FaultInsts is used to obtain []FaultInst via ConfigResolveChildren call
+type FaultInsts struct {
+	XMLName xml.Name
+	Instances []FaultInst `xml:"faultInst"`
+}
+
 // FaultInst is getting injected into Mos in case of faults
 type FaultInst struct {
 	XMLName         xml.Name
