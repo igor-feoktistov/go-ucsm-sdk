@@ -136,6 +136,18 @@ type EquipmentChassis struct {
 	FanModules                 []EquipmentFanModule `xml:"equipmentFanModule"`
 }
 
+// EquipmentChassisMo represents Equipment Chassis Mo to retrive from OutConfig
+type EquipmentChassisMo struct {
+        XMLName xml.Name
+        EquipmentChassis EquipmentChassis `xml:"equipmentChassis"`
+}
+
+// EquipmentChassisMos represents Equipment Chassis Mo to retrive from OutConfigs
+type EquipmentChassisMos struct {
+        XMLName xml.Name
+        EquipmentChassis []EquipmentChassis `xml:"equipmentChassis"`
+}
+
 // ComputePhysical represents a physical specification of an abstract compute item.
 // Serves as the base of physical compute nodes (e.g. blade, stand-alone computer or server).
 type ComputePhysical struct {
