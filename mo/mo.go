@@ -849,6 +849,7 @@ type FaultInst struct {
 	Code            string   `xml:"code,attr,omitempty"`
 	Created         string   `xml:"created,attr,omitempty"`
 	Descr           string   `xml:"descr,attr,omitempty"`
+	Dn              string   `xml:"dn,attr,omitempty"`
 	HighestSeverity string   `xml:"highestSeverity,attr,omitempty"`
 	Id              string   `xml:"id,attr,omitempty"`
 	LastTransition  string   `xml:"lastTransition,attr,omitempty"`
